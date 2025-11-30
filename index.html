@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Forge - NIAMT Ranchi's Official Coding Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <nav class="navbar">
+            <a href="#home" class="logo-link">
+       <img class="codeforgelogo" src="code_forgeniamt_logo.jpg" alt="" >
+            </a>
+
+             <a href="#home" class="logo-link">
+       <img class="college-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg/960px-National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg.png" alt="" >
+            </a>
+
+            <div class="nav-links-desktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#communities" class="nav-link">Communities</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#communities" class="mobile-nav-link">Communities</a>
+            <a href="#events" class="mobile-nav-link">Events</a>
+            <a href="#team" class="mobile-nav-link">Team</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main >
+      <section id="home" class="hero-section">
+    <!-- Dark Overlay -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.523);   /* Change opacity here */
+        z-index: 1;
+    "></div>
+
+    <div class="container hero-content" style="position: relative; z-index: 2;">
+        <div class="hero-text" >
+            <h1 class="hero-title">
+                <span class="text-cf-primary">Code Forge</span><br>
+            </h1>
+
+            <p class="hero-subtitle">
+                NIAMT Ranchi’s home of coding, creativity, and technology — dedicated 
+                to fostering a dynamic and impactful coding culture on campus.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="join-club.html" class="button-primary">Join the Club</a>
+                <a href="#events" class="button-secondary">Upcoming Events</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="mission-section">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <h2 class="section-title text-white">Our Mission</h2>
+                    <p class="mission-text">
+                       We strive to build a vibrant coding culture on campus that inspires innovation, teamwork, and real-world learning. Through collaboration and leadership, we empower students to create, grow, and lead with confidence.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p class="stat-value counter-val" data-target="100">0</p>
+                        <p class="stat-label">Students Trained</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-value counter-val" data-target="10">0</p>
+                        <p class="stat-label">Workshops Held</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-value counter-val" data-target="50">0</p>
+                        <p class="stat-label">Projects Built</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="communities-brief" class="py-20 bg-cf-light">
+            <div class="container">
+                <h2 class="section-title text-cf-dark">Our Communities</h2>
+                <div class="communities-grid-brief">
+                    <div class="community-card-brief border-cf-primary">
+                        <h3 class="card-title">Software Development</h3>
+                        <p class="card-description">Focuses on full-stack web/app development, competitive programming, and creating scalable software solutions.</p>
+                        <p class="card-hashtags text-cf-primary">#WebDev #DSA #MobileApp</p>
+                    </div>
+                    <div class="community-card-brief border-yellow-600">
+                        <h3 class="card-title">AI & Data Science</h3>
+                        <p class="card-description">Explores Machine Learning, Deep Learning, Big Data analytics, and building intelligent systems for real-world problems.</p>
+                        <p class="card-hashtags text-yellow-600">#MachineLearning #DeepLearning #DataAnalytics</p>
+                    </div>
+                    <div class="community-card-brief border-red-600">
+                        <h3 class="card-title">Cybersecurity & Blockchain</h3>
+                        <p class="card-description">Teaches ethical hacking, network security, cryptography, and decentralized application development using blockchain technology.</p>
+                        <p class="card-hashtags text-red-600">#Hacking #Security #Web3 #Crypto</p>
+                    </div>
+                    <div class="community-card-brief border-blue-600">
+                        <h3 class="card-title">Electronics & Automation</h3>
+                        <p class="card-description">Covers IoT, Robotics, embedded systems, and automation using microcontrollers and hardware programming.</p>
+                        <p class="card-hashtags text-blue-600">#IoT #Robotics #EmbeddedSystems #Automation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title text-cf-primary">About Code Forge</h2>
+
+                <div class="about-grid">
+                    <div>
+                        <h3 class="about-subtitle text-cf-dark">Our Genesis and Vision</h3>
+                        <p class="about-text">
+                            Code Forge was officially established in 2022  as a response to the growing need for a dedicated, hands-on technology environment at **National Institute of Advanced Manufacturing Technology (NIAMT), Ranchi**. While NIAMT is renowned for its core engineering, the club was created to foster a parallel, equally robust **coding and software development culture**.
+                        </p>
+                        <p class="about-text mt-4">
+                            The primary goal remains to empower students from all branches to **Learn**, **Build**, and **Lead** in the rapidly evolving tech landscape. We bridge the gap between theoretical knowledge and practical application, ensuring our members are industry-ready innovators.
+                        </p>
+                    </div>
+                    <div class="motto-box border-l-cf-primary">
+                        <h4 class="motto-title text-cf-dark">The Code Forge Motto</h4>
+                        <blockquote class="motto-quote border-l-cf-primary">
+                            "Learn • Build • Lead — Creating a strong coding culture inside the campus."
+                        </blockquote>
+                        <p class="motto-caption">Official Coding & Technology Club of NIAMT, Ranchi.</p>
+                    </div>
+                </div>
+
+                <h3 class="about-subtitle text-center mt-20 text-cf-dark">Our Leadership</h3>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader-avatar">[FC]</div>
+                        <h4 class="leader-name text-cf-dark">Dr. [Faculty Name]</h4>
+                        <p class="leader-role text-cf-primary">Faculty Coordinator</p>
+                        <p class="leader-description">Guiding the club's vision and ensuring institutional alignment.</p>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-avatar">[P]</div>
+                        <h4 class="leader-name text-cf-dark">[President's Name]</h4>
+                        <p class="leader-role text-cf-primary">Club President</p>
+                        <p class="leader-description">Leading the core team and managing overall club operations.</p>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-avatar">[VP]</div>
+                        <h4 class="leader-name text-cf-dark">[VP's Name]</h4>
+                        <p class="leader-role text-cf-primary">Vice-President</p>
+                        <p class="leader-description">Assisting the President and coordinating major events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="communities" class="communities-detail-section">
+            <div class="container">
+                <h2 class="section-title text-cf-dark">Deep Dive into Our Communities</h2>
+                
+                <div id="community-details" class="community-detail-list">
+                    <div class="community-detail-card border-l-cf-primary">
+                        <div class="community-header">
+                            <h3 class="community-title text-cf-dark">1. Software Development</h3>
+                        </div>
+                        <p class="community-description">
+                            This community is the core engine for building robust, scalable applications. We cover everything from Data Structures & Algorithms (DSA) to full-stack web and mobile development, focusing on clean code and deployment best practices.
+                        </p>
+                        <div class="detail-grid">
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Activities & Focus</h4>
+                                <ul class="activity-list">
+                                    <li>Weekly Competitive Programming Sessions</li>
+                                    <li>Full-Stack Development Bootcamps (MERN/MEAN)</li>
+                                    <li>Version Control (Git) workshops</li>
+                                    <li>Open Source Contribution drives</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Core Technologies</h4>
+                                <p class="tech-tags">
+                                    <span class="tech-tag bg-blue-100">React/Next.js</span>
+                                    <span class="tech-tag bg-green-100">Node.js/Express</span>
+                                    <span class="tech-tag bg-orange-100">MongoDB/PostgreSQL</span>
+                                    <span class="tech-tag bg-purple-100">Python/C++ (DSA)</span>
+                                </p>
+                                <h4 class="detail-subtitle text-cf-dark mt-4">Projects Highlight</h4>
+                                <p class="project-highlight">
+                                    *College Internal ERP System, *Clubs Portfolio Website, *Job Portal Clone.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4 class="detail-subtitle text-cf-dark mt-8">Community Heads</h4>
+                        <div class="head-grid">
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Jay Kosle</p>
+                                <p class="head-role text-cf-primary">Lead - Web Development</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Swapnil Srivastava</p>
+                                <p class="head-role text-cf-primary">Lead - Mobile Development</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Dr D K Prabhakar</p>
+                                <p class="head-role text-cf-primary">Lead - Competitive Programming</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Abhishek Bakhla</p>
+                                <p class="head-role text-cf-primary">Lead - Full Stack Ops</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-detail-card border-l-yellow-600">
+                        <div class="community-header">
+                            <h3 class="community-title text-cf-dark">2. Artificial Intelligence & Data Science</h3>
+                        </div>
+                        <p class="community-description">
+                            This community dives into the world of intelligent systems, teaching the principles of Machine Learning, Deep Learning, and effective Data Analysis to solve complex, real-world predictive and classification problems.
+                        </p>
+                        <div class="detail-grid">
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Activities & Focus</h4>
+                                <ul class="activity-list">
+                                    <li>Kaggle Competitions & Workshops</li>
+                                    <li>Introduction to Python & Data Science Libraries (Pandas, NumPy)</li>
+                                    <li>Deep Learning Frameworks (TensorFlow, PyTorch)</li>
+                                    <li>Data Visualization & Storytelling</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Core Technologies</h4>
+                                <p class="tech-tags">
+                                    <span class="tech-tag bg-yellow-100">Python</span>
+                                    <span class="tech-tag bg-red-100">TensorFlow/PyTorch</span>
+                                    <span class="tech-tag bg-indigo-100">Scikit-learn</span>
+                                    <span class="tech-tag bg-green-100">Jupyter/Colab</span>
+                                </p>
+                                <h4 class="detail-subtitle text-cf-dark mt-4">Projects Highlight</h4>
+                                <p class="project-highlight">
+                                    *Sentiment Analyzer, *Handwritten Digit Recognizer (CNN), *Predictive Maintenance Model.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4 class="detail-subtitle text-cf-dark mt-8">Community Heads</h4>
+                        <div class="head-grid">
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Salini Mahato</p>
+                                <p class="head-role text-yellow-600">Lead - Machine Learning</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Ankit Rai</p>
+                                <p class="head-role text-yellow-600">Lead - Deep Learning</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Aman Kumar</p>
+                                <p class="head-role text-yellow-600">Lead - Data Analysis</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Puneet Tiwari</p>
+                                <p class="head-role text-yellow-600">Lead - Research</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-detail-card border-l-red-600">
+                        <div class="community-header">
+                            <h3 class="community-title text-cf-dark">3. Cybersecurity & Blockchain</h3>
+                        </div>
+                        <p class="community-description">
+                            A community focused on digital security, exploring how to defend systems from attacks (Cybersecurity) and how to build decentralized, tamper-proof applications (Blockchain/Web3).
+                        </p>
+                        <div class="detail-grid">
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Activities & Focus</h4>
+                                <ul class="activity-list">
+                                    <li>Capture The Flag (CTF) challenges</li>
+                                    <li>Network Penetration Testing workshops</li>
+                                    <li>Blockchain Fundamentals & Cryptography</li>
+                                    <li>Smart Contract Development (Solidity)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Core Technologies</h4>
+                                <p class="tech-tags">
+                                    <span class="tech-tag bg-red-100">Kali Linux</span>
+                                    <span class="tech-tag bg-purple-100">Solidity</span>
+                                    <span class="tech-tag bg-yellow-100">Ethereum/Polygon</span>
+                                    <span class="tech-tag bg-gray-100">Networking tools (Wireshark)</span>
+                                </p>
+                                <h4 class="detail-subtitle text-cf-dark mt-4">Projects Highlight</h4>
+                                <p class="project-highlight">
+                                    *Decentralized Voting System, *Basic Threat Analysis Tool, *Secure Chat Application Prototype.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4 class="detail-subtitle text-cf-dark mt-8">Community Heads</h4>
+                        <div class="head-grid">
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Dr Rahul Mishra</p>
+                                <p class="head-role text-red-600">Lead - Ethical Hacking</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Aryan Raj</p>
+                                <p class="head-role text-red-600">Lead - Network Security</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Jay Kosle </p>
+                                <p class="head-role text-red-600">Lead - Blockchain Dev</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">[Name Placeholder]</p>
+                                <p class="head-role text-red-600">Lead - Cryptography</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="community-detail-card border-l-blue-600">
+                        <div class="community-header">
+                            <h3 class="community-title text-cf-dark">4. Electronics & Automation</h3>
+                        </div>
+                        <p class="community-description">
+                            Bridging the physical and digital worlds, this community focuses on Internet of Things (IoT), Robotics, and industrial automation using microcontrollers, sensors, and actuator systems.
+                        </p>
+                        <div class="detail-grid">
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Activities & Focus</h4>
+                                <ul class="activity-list">
+                                    <li>IoT Sensor Interfacing Workshops (Arduino/ESP32)</li>
+                                    <li>Robotics and Mechanism Design</li>
+                                    <li>Embedded C/C++ Programming</li>
+                                    <li>Home Automation and Smart Systems projects</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="detail-subtitle text-cf-dark">Core Technologies</h4>
+                                <p class="tech-tags">
+                                    <span class="tech-tag bg-blue-100">Arduino/Raspberry Pi</span>
+                                    <span class="tech-tag bg-teal-100">Embedded C</span>
+                                    <span class="tech-tag bg-red-100">IoT Platforms (Firebase/Adafruit)</span>
+                                    <span class="tech-tag bg-yellow-100">Circuit Design</span>
+                                </p>
+                                <h4 class="detail-subtitle text-cf-dark mt-4">Projects Highlight</h4>
+                                <p class="project-highlight">
+                                    *Smart Attendance System (RFID), *Autonomous Line Follower Robot, *Weather Station using ESP32.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4 class="detail-subtitle text-cf-dark mt-8">Community Heads</h4>
+                        <div class="head-grid">
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Ravindra Pal Singh </p>
+                                <p class="head-role text-blue-600">Lead - IoT Systems</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Ankit Kumar</p>
+                                <p class="head-role text-blue-600">Lead - Robotics</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Ujjwal Kumar</p>
+                                <p class="head-role text-blue-600">Lead - Embedded C</p>
+                            </div>
+                            <div class="head-card">
+                                <p class="head-name text-cf-dark">Arnav Kumar</p>
+                                <p class="head-role text-blue-600">Lead - Automation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="button-primary button-lg">
+                        Interested? Contact the Community Heads!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+            <div class="container">
+                <h2 class="section-title text-cf-primary">Events & Happenings</h2>
+
+                <div class="mb-12">
+                    <h3 class="events-subtitle border-b-cf-primary">Upcoming Events</h3>
+                    <div class="upcoming-events-grid">
+                        <div class="event-card">
+                            <div class="event-image-placeholder"><img src="code-fest.jpg" alt="" width="176px" height="125px"></div>
+                            <div class="event-details">
+                                <h4 class="event-title">🚀 CodeFest 2025: The Annual Hackathon</h4>
+                                <p class="event-meta">**Date:** Dec 15-16, 2025 | **Venue:** NIAMT Auditorium</p>
+                                <p class="event-description">A 24-hour coding sprint challenging students to build innovative solutions for campus problems. Open to all branches.</p>
+                                <a href="http://backend-api/register" target="_blank" class="button-register">
+                                    Register Now (Link to Backend)
+                                </a>
+                            </div>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-image-placeholder"> <img src="cyber.jpg" alt="" width="175px" height="125px"> </div>
+                            <div class="event-details">
+                                <h4 class="event-title">🔒 Cybersecurity 101: Workshop</h4>
+                                <p class="event-meta">**Date:** Nov 10, 2025 | **Venue:** CS Lab</p>
+                                <p class="event-description">An introductory seminar on network security, password hygiene, and basics of ethical hacking.</p>
+                                <a href="http://backend-api/register" target="_blank" class="button-register">
+                                    Register Now (Link to Backend)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="events-subtitle border-b-gray">Past Event Gallery</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" ><img src="past-web.jpg" alt="" height="150px" width="150px"></div>
+                        <div class="gallery-item"><img src="pastAI.jpg" alt="" height="150px" width="150px"></div>
+                        <div class="gallery-item"><img src="pastrobo.jpg" alt="" height="150px" width="150px"></div>
+                        <div class="gallery-item"><img src="pastblockchain.jpg" alt="" height="150px" width="150px"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2 class="section-title text-cf-dark">The Code Forge Core Team</h2>
+
+                <h3 class="team-subtitle text-cf-primary">Community Heads</h3>
+                <div class="team-grid-heads">
+                    <div class="member-card">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Saurav A.</p>
+                        <p class="member-role text-cf-primary">Lead - Web Dev</p>
+                        <p class="member-community">Software Dev Community</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Priya R.</p>
+                        <p class="member-role text-yellow-600">Lead - ML/DL</p>
+                        <p class="member-community">AI & Data Science Community</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Aman V.</p>
+                        <p class="member-role text-red-600">Lead - Blockchain</p>
+                        <p class="member-community">Cybersecurity Community</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Neha M.</p>
+                        <p class="member-role text-blue-600">Lead - IoT Systems</p>
+                        <p class="member-community">Electronics Community</p>
+                    </div>
+                    <div class="placeholder-text-full">... (12 more Community Head cards would follow here) ...</div>
+                </div>
+
+                <h3 class="team-subtitle text-cf-dark mt-20">Web Development Team</h3>
+                <div class="team-grid-webdev">
+                    <div class="member-card-webdev">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Web Dev 1</p>
+                        <p class="member-role-sub">Frontend</p>
+                    </div>
+                    <div class="member-card-webdev">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Web Dev 2</p>
+                        <p class="member-role-sub">Backend</p>
+                    </div>
+                    <div class="member-card-webdev">
+                        <div class="member-avatar">[P]</div>
+                        <p class="member-name text-cf-dark">Web Dev 3</p>
+                        <p class="member-role-sub">UI/UX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title text-cf-primary">Get in Touch</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h3 class="contact-subtitle text-cf-dark">Send us a Message</h3>
+                        <form id="contactForm" action="http://localhost:5000/api/contact" method="POST" class="contact-form-style">
+                            <div>
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="email" class="form-label">Email (College ID preferred)</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" required class="form-input">
+                            </div>
+                            <div>
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="form-input"></textarea>
+                            </div>
+                            <button type="submit" class="button-primary w-full">
+                                Submit
+                            </button>
+                            <p id="formMessage" class="form-message-style"></p>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h3 class="contact-subtitle text-cf-dark">Our Details</h3>
+                        <div class="contact-details-list">
+                            <p class="contact-item">
+                                <span class="contact-icon text-cf-primary">📧</span> 
+                                <span class="contact-label">Email:</span> codeforge@niatm.ac.in
+                            </p>
+                            <p class="contact-item">
+                                <span class="contact-icon text-cf-primary">📍</span> 
+                                <span class="contact-label">Location:</span> National Institute of Advanced Manufacturing Technology (NIAMT), Ranchi.
+                            </p>
+                        </div>
+
+                        <h3 class="contact-subtitle mt-8 text-cf-dark">Social Media</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">🔗</a> 
+                            <a href="#" class="social-link">💻</a> 
+                            <a href="#" class="social-link">📷</a> 
+                        </div>
+
+                        <h3 class="contact-subtitle mt-8 text-cf-dark">Campus Map</h3>
+                        <div class="map-placeholder border-cf-primary">
+                            <span class="map-text">[Google Map Embed Placeholder for NIAMT, Ranchi]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 Code Forge - Official Club of NIAMT, Ranchi.</p>
+            <p class="footer-caption">Built with passion by the Code Forge Web Dev Team.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
