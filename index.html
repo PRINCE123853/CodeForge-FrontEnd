@@ -1,3 +1,5 @@
+<!-- i have written some css and js code in this not much just till 120 line is mixed with html css , but all is clear -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,41 +11,103 @@
 </head>
 <body>
 
-    <header class="sticky-header">
-        <nav class="navbar">
-            <a href="#home" class="logo-link">
-       <img class="codeforgelogo" src="code_forgeniamt_logo.jpg" alt="" >
-            </a>
+   <header style="width:100%; position:sticky; top:0; background:#e4c7b6; z-index:999;">
 
-             <a href="#home" class="logo-link">
-       <img class="college-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg/960px-National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg.png" alt="" >
-            </a>
+    <nav style="
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:10px 15px;
+    ">
 
-            <div class="nav-links-desktop">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#communities" class="nav-link">Communities</a>
-                <a href="#events" class="nav-link">Events</a>
-                <a href="#team" class="nav-link">Team</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
-        <div id="mobile-menu" class="mobile-menu hidden">
-            <a href="#home" class="mobile-nav-link">Home</a>
-            <a href="#about" class="mobile-nav-link">About</a>
-            <a href="#communities" class="mobile-nav-link">Communities</a>
-            <a href="#events" class="mobile-nav-link">Events</a>
-            <a href="#team" class="mobile-nav-link">Team</a>
-            <a href="#contact" class="mobile-nav-link">Contact</a>
+        <!-- LEFT LOGO -->
+        <img src="code_forgeniamt_logo.jpg" alt="" 
+        style="height:100px; width:auto; border-radius: 50%;" >
+
+        <!-- NAV LINKS (DESKTOP ONLY) -->
+        <div class="nav-middle" style="
+            display:flex;
+            gap:25px;
+            font-size:20px;
+            font-weight:500;
+        ">
+            <a href="#home" style="text-decoration:none; color:black;">Home</a>
+            <a href="#about" style="text-decoration:none; color:black;">About</a>
+            <a href="#communities" style="text-decoration:none; color:black;">Communities</a>
+            <a href="#events" style="text-decoration:none; color:black;">Events</a>
+            <a href="#team" style="text-decoration:none; color:black;">Team</a>
+            <a href="#contact" style="text-decoration:none; color:black;">Contact</a>
         </div>
-    </header>
+
+        <!-- RIGHT LOGO -->
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg/960px-National_Institute_of_Advanced_Manufacturing_Technology_Logo.svg.png" 
+        style="height:75px; width:auto;">
+        
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menu-btn" style="
+            background:none; 
+            border:none; 
+            display:none;
+        ">
+            <svg style="width:34px; height:34px;" fill="none" stroke="black" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" style="
+        display:none;
+        flex-direction:column;
+        background:#e4c7b6;
+        padding:10px;
+        gap:10px;
+    ">
+        <a href="#home" style="padding:8px 0; text-decoration:none; color:black;">Home</a>
+        <a href="#about" style="padding:8px 0; text-decoration:none; color:black;">About</a>
+        <a href="#communities" style="padding:8px 0; text-decoration:none; color:black;">Communities</a>
+        <a href="#events" style="padding:8px 0; text-decoration:none; color:black;">Events</a>
+        <a href="#team" style="padding:8px 0; text-decoration:none; color:black;">Team</a>
+        <a href="#contact" style="padding:8px 0; text-decoration:none; color:black;">Contact</a>
+    </div>
+
+    <!-- INLINE RESPONSIVE CSS + JS -->
+    <style>
+        @media (max-width: 850px) {
+
+            /* shrink logos */
+            header img {
+                height:55px !important;
+            }
+
+            /* hide desktop nav */
+            .nav-middle {
+                display:none !important;
+            }
+
+            /* show menu btn */
+            #menu-btn {
+                display:block !important;
+            }
+        }
+    </style>
+
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
+
+</header>
 
     <main >
       <section id="home" class="hero-section">
-    <!-- Dark Overlay -->
+    <!-- Dark Overlay , i am going to write here for testing-->
     <div style="
         position: absolute;
         top: 0;
@@ -454,25 +518,25 @@
                 <div class="team-grid-heads">
                     <div class="member-card">
                         <div class="member-avatar">[P]</div>
-                        <p class="member-name text-cf-dark">Saurav A.</p>
+                        <p class="member-name text-cf-dark">Dr D K Prabhakar</p>
                         <p class="member-role text-cf-primary">Lead - Web Dev</p>
                         <p class="member-community">Software Dev Community</p>
                     </div>
                     <div class="member-card">
                         <div class="member-avatar">[P]</div>
-                        <p class="member-name text-cf-dark">Priya R.</p>
+                        <p class="member-name text-cf-dark">Shalini Mahato</p>
                         <p class="member-role text-yellow-600">Lead - ML/DL</p>
                         <p class="member-community">AI & Data Science Community</p>
                     </div>
                     <div class="member-card">
                         <div class="member-avatar">[P]</div>
-                        <p class="member-name text-cf-dark">Aman V.</p>
+                        <p class="member-name text-cf-dark">Dr Rahul Mishra</p>
                         <p class="member-role text-red-600">Lead - Blockchain</p>
                         <p class="member-community">Cybersecurity Community</p>
                     </div>
                     <div class="member-card">
                         <div class="member-avatar">[P]</div>
-                        <p class="member-name text-cf-dark">Neha M.</p>
+                        <p class="member-name text-cf-dark">Ravindra Pal Singh</p>
                         <p class="member-role text-blue-600">Lead - IoT Systems</p>
                         <p class="member-community">Electronics Community</p>
                     </div>

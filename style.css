@@ -220,12 +220,15 @@ html {
 .button-primary {
     background-color: var(--cf-primary);
     /* color: var(--cf-white); */
-    background-color: #fefefe;
-    color: #0D9488;
+    background-color: #ffffff;
+    color: #09a0a5;
+    
 }
 
 .button-primary:hover {
-    background-color: #16a9ba; /* Teal 700 */
+   background-color: var(--cf-primary);
+    color: var(--cf-white);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .button-secondary {
